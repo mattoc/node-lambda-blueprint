@@ -11,8 +11,8 @@ try {
 const aws = require('aws-sdk');
 
 
-module.exports.handler = function(event, context, cb) {
-  cb(null, {
+module.exports.handler = function(event, context, callback) {
+  callback(null, {
     statusCode: 200,
     body: 'Success!',
     message: event.message

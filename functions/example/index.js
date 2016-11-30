@@ -8,6 +8,9 @@ try {
   throw new Error('A local .env file is required, see sample.env');
 }
 
+const aws = require('aws-sdk');
+
+
 module.exports.handler = function(event, context, cb) {
   cb(null, {
     statusCode: 200,

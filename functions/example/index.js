@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 try {
-  const env = fs.statSync('.env');
+  fs.statSync('.env');
   require('dotenv').config();
 } catch(error) {
   throw new Error('A local .env file is required, see sample.env');
